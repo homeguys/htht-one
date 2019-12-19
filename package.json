@@ -1,0 +1,26 @@
+{
+  "name": "htht-one",
+  "version": "0.0.3",
+  "description": "发布一个npm包，构建自己的第三方库",
+  "author": "wanglei 918061733@qq.com",
+  "main": "src/index.js",
+  "keywords": [
+    "my-npm-libs"
+  ],
+  "files": [
+    "examples",
+    "lib",
+    "src",
+    "test"
+  ],
+  "private": false,
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:homeguys/npm-one.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
