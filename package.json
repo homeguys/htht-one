@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "发布一个npm包，构建自己的第三方库",
   "author": "wanglei 918061733@qq.com",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "keywords": [
     "my-npm-libs"
   ],
@@ -20,7 +20,24 @@
     "url": "git@github.com:homeguys/npm-one.git"
   },
   "scripts": {
+    "build": "babel ./src --out-dir ./lib --plugins=transform-class-properties,transform-react-jsx --presets=env",
+    "prepublish": "babel ./src --out-dir ./lib --plugins=transform-class-properties,transform-react-jsx --presets=env",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "antd": "^3.26.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
   },
   "license": "MIT"
 }
