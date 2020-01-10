@@ -1,11 +1,11 @@
 {
-  "name": "htht-one",
-  "version": "0.0.3",
+  "name": "htht-design",
+  "version": "0.0.10",
   "description": "发布一个npm包，构建自己的第三方库",
   "author": "wanglei 918061733@qq.com",
   "main": "lib/index.js",
   "keywords": [
-    "my-npm-libs"
+    "htht-design"
   ],
   "files": [
     "examples",
@@ -14,30 +14,41 @@
     "test"
   ],
   "private": false,
-  "homepage": "",
+  "homepage": "/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:homeguys/npm-one.git"
+    "url": "git@github.com:homeguys/htht-design.git"
   },
   "scripts": {
     "build": "babel ./src --out-dir ./lib --plugins=transform-class-properties,transform-react-jsx --presets=env",
-    "prepublish": "babel ./src --out-dir ./lib --plugins=transform-class-properties,transform-react-jsx --presets=env",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "antd": "^3.26.3",
+    "gulp": "^4.0.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.5"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "gulp-cli": "^2.2.0",
+    "gulp-if": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "@babel/core": "7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "8.0.6",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-named-asset-import": "^0.3.5",
+    "babel-preset-react-app": "^9.1.0",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^24.9.0"
   },
   "license": "MIT"
 }
