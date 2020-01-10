@@ -20,9 +20,16 @@
     "url": "git@github.com:homeguys/htht-design.git"
   },
   "scripts": {
-    "build": "babel ./src --out-dir ./lib --plugins=transform-class-properties,transform-react-jsx --presets=env",
+    "clean": "rimraf lib",
+    "build": "npm run clean && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "last 2 version",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 9"
+  ],
   "dependencies": {
     "antd": "^3.26.3",
     "gulp": "^4.0.2",
@@ -31,11 +38,6 @@
     "webpack": "^4.41.5"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.3",
-    "gulp-cli": "^2.2.0",
-    "gulp-if": "^3.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
     "@babel/core": "7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-decorators": "^7.7.4",
@@ -43,12 +45,23 @@
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "autoprefixer": "^9.7.3",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^24.9.0",
     "babel-loader": "8.0.6",
     "babel-plugin-import": "^1.13.0",
     "babel-plugin-named-asset-import": "^0.3.5",
     "babel-preset-react-app": "^9.1.0",
-    "babel-eslint": "10.0.3",
-    "babel-jest": "^24.9.0"
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-if": "^3.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "rimraf": "^3.0.0"
   },
   "license": "MIT"
 }
