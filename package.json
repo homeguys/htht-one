@@ -1,17 +1,22 @@
 {
   "name": "htht-design",
-  "version": "0.0.13",
+  "version": "0.0.19",
   "description": "发布一个npm包，构建自己的第三方库",
   "author": "wanglei 918061733@qq.com",
   "main": "lib/index.js",
   "keywords": [
-    "htht-design"
+    "ui",
+    "design",
+    "htht-design",
+    "react",
+    "react-component",
+    "component",
+    "components",
+    "framework",
+    "frontend"
   ],
   "files": [
-    "examples",
-    "lib",
-    "src",
-    "test"
+    "lib"
   ],
   "private": false,
   "homepage": "/",
@@ -33,8 +38,7 @@
   "dependencies": {
     "antd": "^3.26.3",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "through2": "^3.0.1"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@babel/core": "7.6.0",
@@ -62,6 +66,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "rimraf": "^3.0.0",
+    "through2": "^3.0.1",
     "webpack": "^4.41.5"
   },
   "license": "MIT"
